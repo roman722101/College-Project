@@ -1,0 +1,139 @@
+h2 {
+    font-size: 35px;
+    float: left;
+    border-top: 5px solid rgb(255, 115, 0);
+    border-bottom: 5px solid rgb(46, 236, 8);
+    border-radius: 10px;
+    color: rgb(255, 14, 147);
+    border-style: double;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.a {
+    font-size: 100px;
+    color: rgb(253, 16, 16);
+    text-shadow: 10px 5px 7px rgb(81 255 0);
+    margin-top: 2px;
+    font-family: 'Moon Dance', cursive;
+    position: relative;
+}
+
+body {
+    background-image: url('img/t5.jfif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+}
+
+th {
+    border: 4px solid rgb(245, 5, 17);
+    border-radius: 30px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Moon Dance', cursive;
+    font-family: 'Noto Serif', serif;
+    color: rgb(255, 145, 10);
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+    border: 4px rgb(15 37 194);
+    border-style: double;
+    border-radius: 27px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Moon Dance', cursive;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+}
+
+.name {
+    text-align: left;
+    color: #00ebd5;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Moon Dance', cursive;
+    font-family: 'Noto Serif', serif;
+}
+
+
+/* button {
+    background-color: #190c8d;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 15;
+    position: relative;
+    outline: none;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 56px;
+    width: 106px;
+} */
+
+.button {
+    border-radius: 34px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    width: 172px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 15px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.dt {
+    color: deeppink;
+}
+
+.da {
+    color: gold;
+}
+
+.price {
+    color: #02fad9;
+}
+
+marquee {
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: red;
+    font-size: 20px;
+    background: oldlace;
+    border-radius: 10px;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="style.css">
+    <link rel="shortcut icon" href="img/t2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Moon+Dance&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <title>Indian Train Reservation</title>
+</head>
+
+<body>
+
+
+    <h1 class="a">Adventour</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+
+        </ul>
+    </nav>
+    <div class="content">
+
+        <div>
+            <!-- <h2 class="rgb">Welcome To Reservation Portal. Book Your <span></span> Ticket </h2> -->
+            <h2 class="rgb" id="sms"></h2>
+            <!-- MY JS MSG -->
+            <script>
+                $(document).ready(function() {
+
+
+                    var i = 0;
+                    var speed = 50;
+                    var msg = "Welcome To Indian Railway Reservation Portal. Book Your Train Ticket here ";
+
+                    function type() {
+
+                        if (i < msg.length) {
+                            var op = document.getElementById("sms");
+                            op.innerHTML += msg.charAt(i);
+                            i++;
+                            setTimeout(type, speed);
+                        }
+                    }
+                    type();
+                });
+            </script>
+        </div>
+
+        <section class="form1">
+            <form method="GET" action="train.html">
+
+                <div class="f1 bg-dark">
+
+                    <div class="f2 bg-warning">
+                        <h1>Reserve Your Ticket</h1>
+                    </div>
+                    <div class="f3">
+                        <input type="radio" onclick="javalang()" name="r" id="abc" required>
+                        <label class="text-white">One Way</label>
+                        <input type="radio" onclick="javalang()" name="r" id="xyz" required>
+                        <label class="text-white">Both</label>
+                    </div>
+                    <script>
+                        function javalang() {
+                            if (document.getElementById("abc").checked) {
+                                var tinz = document.getElementById("dtr");
+                                var sipp = document.getElementById("ret");
+                                tinz.style.display = 'none';
+                                sipp.style.display = 'none';
+                            } else if (document.getElementById("xyz").checked) {
+                                var tinz = document.getElementById("dtr");
+                                var sipp = document.getElementById("ret");
+                                tinz.style.display = 'inline';
+                                sipp.style.display = 'inline';
+                            }
+                        }
+                    </script>
+
+                    <div class="f4">
+                        <select name="Departure Station" class="input bg-dark" required>
+                            <option value="" disabled selected hidden>Choose Station...</option>
+
+                            <option value="Bankura">Bankura</option>
+                        </select>
+
+                        <select name="Arrival Station" class="input bg-dark">
+                            <option value="" disabled selected hidden>Choose Station...</option>
+                            <option value="Midnapore">Midnapore</option>
+                        </select>
+                        <!-- <input type="text" placeholder="From" class="input bg-dark" required>
+                        <input type="text" placeholder="To" class="input bg-dark" required> -->
+
+                        <br>
+
+
+                        <label class="text-white" style="margin-left:10px;">Depart</label>
+                        <input type="date" class="tarikh bg-dark text-black" required>
+                        <label class="text-white" style="margin-left:10px;" id="ret">Return</label>
+                        <input type="date" class="tarikh bg-dark" id="dtr">
+                        <!-- 
+                        <input type="number" class="bg-dark person" placeholder="Adults" required>
+                        <input type="number" class="bg-dark person" placeholder="Children"><br> -->
+
+                        <label class="text-white travel">Travel Class</label>
+                        <select class="bg-dark text-white travel2" required>
+
+                            <!-- <option>First Class/1A</option>
+                    <option>AC 2tier/2A</option>
+                    <option>AC 3tier/3A</option>
+                    <option>Executive class chair car/Economy Class</option>
+                    <option>AC Chair Car</option>
+                    <option>Sleeper Class</option>
+                    <option>Second Class</option> -->
+                            <option>General</option>
+                        </select>
+
+                        <form action="train.html" method="POST">
+                            <input type="submit" value="Check Out" class="btn bg-warning">
+                        </form>
+                    </div>
+                </div>
+            </form>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <p class="copy-para">Copyright &copy; 2021 Softnetic , All Rights Reserved. Designed by Softnetic Technology .</p>
+                    </div>
+                </div>
+                <!-- <div class="col">
+                    <div class="row">
+                        <span class="copy-social">Get In Touch : 
+                <a href="#" target="_blank" class="facebook" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                 <a href="#" target="_blank" class="twitter" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" target="_blank" class="youtube" title="Youtube"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                <a href="#" target="_blank" class="linkedin" title="linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                </span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

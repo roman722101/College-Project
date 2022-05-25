@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="payment style.css">
+    <link rel="shortcut icon" href="img/t2.png" type="image/x-icon">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Indie+Flower&family=Playball&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <title>Payment</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <p><span class="sef">Ap</span>n<span class="blue">a</span>P<span class="green">ay</span></p>
+        </div>
+        <br>
+        <div class="middle">
+            <h1>IRCTC Payment Portal</h1>
+            <p>Pay To Indian Rail Corporation</p>
+        </div>
+
+        <div class="bottom">
+
+            <button type="button" class="payment-btn"><a herf="#">Pay with Paypal</a></button>
+            <button type="button" class="payment-btn"><a href="#">Pay with Netbanking</a></button>
+        </div>
+
+        <div class=card-details>
+            <p>Pay using credit or debit card</p>
+            <div class="card-num">
+                <label>Card Number</label><br>
+                <input type="text" class="card-num" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+            </div>
+
+            <div class="date">
+                <label>Expiry Date</label><br>
+                <input type="text" class="date" placeholder="mm" required>
+                <input type="text" class="date" placeholder="yyyy" required>
+            </div>
+
+            <div class="cvc">
+                <label>CVC</label><br>
+                <input type="password" class="cvc" placeholder="xxx" required>
+            </div>
+
+            <div class="name">
+                <label>Card Holder Name</label><br>
+                <input type="text" class="name" placeholder="Full Name" required>
+            </div>
+
+            <button type="button" class="pay-btn" onclick="my_msf()">Pay Now</button>
+        </div>
+        <script>
+            function my_msf() {
+                swal("Sucees!", "Your Ticket booking number is 696969!", "success");
+            }
+        </script>
+
+    </div>
+
+
+    <!-- <div class="col">
+                    <div class="row">
+                        <span class="copy-social">Get In Touch : 
+                <a href="#" target="_blank" class="facebook" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                 <a href="#" target="_blank" class="twitter" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" target="_blank" class="youtube" title="Youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="#" target="_blank" class="linkedin" title="linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                </span>
+                    </div>
+                </div>
+            </div> -->
+
+
+</body>
+
+</html>
